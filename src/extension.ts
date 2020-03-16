@@ -10,7 +10,7 @@ export function activate(context: vscode.ExtensionContext) {
 			return;
 		}
 		const files = await vscode.workspace.findFiles(globPattern);
-		vscode.window.showInformationMessage(files ? "Result: " + files.join(" "): "Result: nothing");
+		vscode.window.showInformationMessage(files && files.length > 0 ? "Result: " + files.join(" ") : "Result: nothing");
 	});
 
 	context.subscriptions.push(disposable);
