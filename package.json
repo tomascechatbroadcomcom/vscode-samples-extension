@@ -2,7 +2,7 @@
 	"name": "vscode-samples-extension",
 	"displayName": "VSCode Samples Extension",
 	"description": "VSCode Samples Extension to test Theia IDE",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"publisher": "x0a",
 	"license": "MIT",
 	"repository": {
@@ -24,6 +24,10 @@
 			{
 				"command": "vscode-samples-extension.find-files",
 				"title": "Example: Find Files"
+			},
+			{
+				"command": "vscode-samples-extension.show-dap-tracker-message",
+				"title": "Example: Track DAP message"
 			}
 		]
 	},
